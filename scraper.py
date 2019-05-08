@@ -4,5 +4,5 @@ import cloudscraper
 import sys
 
 if __name__ == '__main__':
-    scraper = cloudscraper.create_scraper()
+    scraper = cloudscraper.create_scraper(interpreter='nodejs')
     print(scraper.get(sys.argv[1]).content.decode())
