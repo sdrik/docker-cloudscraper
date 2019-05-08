@@ -5,4 +5,4 @@ import sys
 
 if __name__ == '__main__':
     scraper = cloudscraper.create_scraper()
-    print(scraper.get(sys.argv[1]).content)
+    print(scraper.get(sys.argv[1]).content.decode())
